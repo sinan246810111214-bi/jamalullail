@@ -65,9 +65,9 @@ const Header = () => {
         <div className="flex items-center gap-3 md:gap-4 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <motion.div 
             whileHover={{ rotate: 10, scale: 1.05 }}
-            className="w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center border border-gold-premium/30 shadow-lg"
+            className="w-10 h-10 md:w-14 md:h-14 bg-white rounded-xl overflow-hidden flex items-center justify-center border border-gold-premium/30 shadow-lg"
           >
-             <Building2 className="text-gold-premium w-5 h-5 md:w-6 md:h-6" />
+             <img src="https://i.ibb.co/BVn75Bw5/Chat-GPT-Image-Apr-20-2026-02-57-00-PM.png" alt="Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           </motion.div>
           <div className="flex flex-col">
             <span className="font-serif text-lg md:text-xl font-bold tracking-tight text-cream-soft uppercase leading-none">
@@ -793,8 +793,8 @@ const Footer = () => {
         <div className="grid lg:grid-cols-12 gap-20 pb-20 border-b border-white/10">
           <div className="lg:col-span-5">
             <div className="flex items-center gap-4 mb-10">
-              <div className="w-12 h-12 bg-gold-premium rounded-2xl flex items-center justify-center shadow-lg shadow-gold-premium/20">
-                <Building2 className="text-white w-6 h-6" />
+              <div className="w-14 h-14 bg-white rounded-2xl overflow-hidden flex items-center justify-center shadow-lg shadow-gold-premium/20">
+                <img src="https://i.ibb.co/BVn75Bw5/Chat-GPT-Image-Apr-20-2026-02-57-00-PM.png" alt="Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <span className="font-serif text-3xl font-bold text-white tracking-tight uppercase">Jamalullail</span>
             </div>
