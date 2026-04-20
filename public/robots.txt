@@ -1,8 +1,3 @@
-Sitemap: https://ais-dev-4dzvz4nhlg5klkfkoasznq-591521654113.asia-east1.run.app/sitemap.xml
-
 User-agent: *
 Allow: /
-
-# Exclude private admin triggers
-Disallow: /?edu
-Disallow: /*?edu
+Sitemap: https://ais-dev-4dzvz4nhlg5klkfkoasznq-591521654113.asia-east1.run.app/sitemap.xml

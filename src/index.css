@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-serif: "Cormorant Garamond", serif;
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Libre Baskerville", serif;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
   
   --color-emerald-deep: #064e3b;
-  --color-gold-premium: #d4af37;
-  --color-cream-soft: #fdfbf7;
+  --color-gold-premium: #c5a059;
+  --color-cream-soft: #f8f5f0;
 }
 
 @layer base {
@@ -42,6 +42,15 @@
 
 .animate-shake {
   animation: shake 0.2s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
 }
 
 .writing-vertical-rl {
