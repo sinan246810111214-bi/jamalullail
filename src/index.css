@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-emerald-deep: #064e3b;
+  --color-gold-premium: #d4af37;
+  --color-cream-soft: #fdfbf7;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans bg-cream-soft text-emerald-deep antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.islamic-pattern {
+  background-image: radial-gradient(circle at 2px 2px, var(--color-gold-premium) 1px, transparent 0);
+  background-size: 24px 24px;
+  opacity: 0.05;
+}
+
+.glass-header {
+  @apply backdrop-blur-md bg-cream-soft/80 border-b border-gold-premium/20;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.animate-shake {
+  animation: shake 0.2s ease-in-out infinite;
+}
+
+.writing-vertical-rl {
+  writing-mode: vertical-rl;
+}
