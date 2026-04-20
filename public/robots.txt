@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://ais-dev-4dzvz4nhlg5klkfkoasznq-591521654113.asia-east1.run.app/sitemap.xml
+Disallow: /cgi-bin/
+
+Sitemap: https://ais-pre-4dzvz4nhlg5klkfkoasznq-591521654113.asia-east1.run.app/sitemap.xml

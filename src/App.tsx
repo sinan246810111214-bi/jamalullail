@@ -534,7 +534,7 @@ const AdmissionEnquiryForm = () => {
     e.preventDefault();
     setLoading(true);
 
-    const whatsappNumber = "+918593007071";
+    const whatsappNumber = "+919061693028";
     const text = `*New Admission Enquiry - Jamalullail Islamic Dawa College*%0A%0A` +
       `*Student Name:* ${formData.studentName}%0A` +
       `*Parent Name:* ${formData.parentName}%0A` +
@@ -821,8 +821,11 @@ const Footer = () => {
                   <Phone size={20} />
                 </div>
                 <div>
-                  <p className="text-white font-bold mb-1">+91 8593007071</p>
-                  <p className="text-[10px] uppercase tracking-widest text-white/30 font-bold">Admission Concierge</p>
+                  <div className="flex flex-col gap-1">
+                    <p className="text-white font-bold leading-none">+91 90616 93028</p>
+                    <p className="text-white/60 text-xs font-bold leading-none">+91 85930 07071</p>
+                  </div>
+                  <p className="text-[10px] uppercase tracking-widest text-white/30 font-bold mt-2">Admission Concierge</p>
                 </div>
               </div>
               <div className="flex gap-6">
@@ -1087,7 +1090,7 @@ const AdminAuthModal = ({ isOpen, onClose, onSuccess }: { isOpen: boolean; onClo
 const FloatingWhatsApp = () => {
   return (
     <motion.a
-      href="https://wa.me/+918593007071"
+      href="https://wa.me/+919061693028"
       target="_blank"
       rel="noopener noreferrer"
       initial={{ scale: 0, opacity: 0 }}
@@ -1112,6 +1115,7 @@ export default function App() {
     const keysPressed = new Set<string>();
 
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (!e.key) return;
       keysPressed.add(e.key.toLowerCase());
       
       const isShift = e.shiftKey;
@@ -1125,6 +1129,7 @@ export default function App() {
     };
 
     const handleKeyUp = (e: KeyboardEvent) => {
+      if (!e.key) return;
       keysPressed.delete(e.key.toLowerCase());
     };
 
